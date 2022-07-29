@@ -5,7 +5,7 @@
 // @description  Dashboard for Phoenix in 42 Intra
 // @author       thzeribi
 // @match        https://profile.intra.42.fr/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=42.fr
+// @icon         https://cdn.discordapp.com/icons/964522196703793172/ad8236d4fbd047316ed2297d504ba136.webp
 // @grant        none
 // @run-at document-end
 // ==/UserScript==
@@ -15,13 +15,13 @@ let login, box;
 function PhoenixConsole() {
 	for (let c in console) {
 		if (typeof console[c] == 'function') {
-			this[c] = console[c].bind(console, "%c[Pheonix DashBoard]%c", "color: #f99e3b;", "");
+			this[c] = console[c].bind(console, "%c[Phoenix DashBoard]%c", "color: #f99e3b;", "");
 		}
 	}
 
-	this["time"] = console.time.bind(console, "[Pheonix DashBoard]");
-	this["timeLog"] = console.timeLog.bind(console, "[Pheonix DashBoard]");
-	this["timeEnd"] = console.timeEnd.bind(console, "[Pheonix DashBoard]");
+	this["time"] = console.time.bind(console, "[Phoenix DashBoard]");
+	this["timeLog"] = console.timeLog.bind(console, "[Phoenix DashBoard]");
+	this["timeEnd"] = console.timeEnd.bind(console, "[Phoenix DashBoard]");
 }
 
 const iConsole = new PhoenixConsole();
@@ -67,14 +67,14 @@ function getLogin() {
 
 function init()
 {
-	GM_addStyle("#logtime_container { display: flex!important; }");
 
 	box = getBox();
 	login = getLogin();
 
 	if (!box || !login) return (false);
-	iConsole.log(`Initializing of the Pheonix Dashboard for the student ${login} !`);
+	iConsole.log(`Initializing of the Phoenix Dashboard for the student ${login} !`);
 
+	GM_addStyle("#logtime_container { display: flex!important; }");
 	box.classList.remove("hidden");
 	box.replaceChildren();
 	return (true);
@@ -83,6 +83,6 @@ function init()
 (function() {
 	'use strict';
 	if (!init()) return;
-	iConsole.log(`${login} is Pheonix : ${isPhoenix()}`);
+	iConsole.log(`${login} is Phoenix : ${isPhoenix()}`);
 	iConsole.log(`Getting logtime of the current week...`);
 })();
