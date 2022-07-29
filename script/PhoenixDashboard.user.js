@@ -12,7 +12,7 @@
 
 let login, box;
 
-function PheonixConsole() {
+function PhoenixConsole() {
 	for (let c in console) {
 		if (typeof console[c] == 'function') {
 			this[c] = console[c].bind(console, "%c[Pheonix DashBoard]%c", "color: #f99e3b;", "");
@@ -24,7 +24,7 @@ function PheonixConsole() {
 	this["timeEnd"] = console.timeEnd.bind(console, "[Pheonix DashBoard]");
 }
 
-const iConsole = new PheonixConsole();
+const iConsole = new PhoenixConsole();
 
 function GM_addStyle(css) {
 	const style = document.getElementById("GM_addStyleBy8626") || (function() {
