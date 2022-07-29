@@ -2,8 +2,8 @@
 // @name         PhoenixDashboard
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  Dashboard for Phoenix in 42 Intra
+// @author       thzeribi
 // @match        https://profile.intra.42.fr/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=42.fr
 // @grant        none
