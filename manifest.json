@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "Phoenix Desktop",
+	"version": "1.0",
+	"description": "A extension for Phoenix on 42 Intra",
+	"icons": {
+		"48": "icons/icon.webp"
+	},
+	"options_ui": {
+		"page": "options/options.html",
+		"browser_style": false,
+		"open_in_tab": true
+	},
+	"permissions": [
+		"*://*.intra.42.fr/*"
+	],
+	"incognito": "spanning",
+	"content_scripts": [
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"css": ["srcs/fonts/custom.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"js": ["srcs/utils/utils.js", "srcs/utils/console.js", "srcs/init.js", "srcs/logtime.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"js": ["srcs/pheonix.js"],
+			"run_at": "document_end"
+		}
+	],
+	"background": {
+		"scripts": [
+			"srcs/utils/console.js",
+			"srcs/pheonix.js"
+		]
+	}
+}
