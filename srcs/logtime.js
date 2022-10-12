@@ -13,6 +13,8 @@ function showLogtime() {
 	let logtimeTitleDiv = document.createElement('h3');
 	let logtimeContentDiv = document.createElement('h4');
 	logtimeContentDiv.style.textAlign = "center";
+	if (logtime.days >= 1) logtimeContentDiv.style.setProperty("color", "#009407", "important");
+	else logtimeContentDiv.style.setProperty("color", "#bd0000", "important");
 
 	logtimeTitleDiv.innerHTML = `Logtime this week :\n`;
 	if (logtime.days > 0)
