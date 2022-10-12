@@ -6,7 +6,7 @@
 /*   By: thzeribi <thzeribi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 17:29:29 by thzeribi          #+#    #+#             */
-/*   Updated: 2022/10/12 19:36:08 by thzeribi         ###   ########.fr       */
+/*   Updated: 2022/10/12 20:27:30 by thzeribi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ function GM_addStyle(css) {
 
 function isPhoenix() {
 	try {
-		document.querySelector(".user-badge").getAttribute("data-badge");
-		return (true);
+		let data = document.querySelector(".user-badge").getAttribute("data-badge");
+		if (data === "phoenix")
+			return (true);
+		else return (false);
 	} catch (err) {
 		return (false);
 	}
