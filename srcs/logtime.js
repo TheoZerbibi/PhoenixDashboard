@@ -40,5 +40,4 @@ async function convertLogtime(locJSON) {
 			else { logtime.days += 1; logtime.hours = (logtime.hours + hours) % 24; }
 		}
 	}
-	console.log(logtime);
 }
