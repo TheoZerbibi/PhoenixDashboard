@@ -7,6 +7,6 @@ const	dayOfMonth	= today.getDate();
 
 const	startTime	= new Date();
 const	endAt		= new Date();
-startTime.setDate(startTime.getDate() - (startTime.getDay() + 6) % 7);
+startTime.setDate(startTime.getDate() - today.getDate());
 startTime.setHours(0, 0, 0, 0);
 endAt.setHours(0, 0, 0, 0);
