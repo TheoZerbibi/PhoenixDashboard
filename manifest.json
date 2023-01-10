@@ -2,9 +2,10 @@
 	"manifest_version": 2,
 	"name": "Phoenix Desktop",
 	"version": "1.0",
-	"description": "A extension for Phoenix on 42 Intra",
+	"description": "An extension for 42 students that are part of the Phoenix program.
+		This will remove the Blackhole box on the intra main page and replace it with that display the monthly logtime",
 	"icons": {
-		"48": "icons/icon.webp"
+		"88": "icons/icon.webp"
 	},
 	"options_ui": {
 		"page": "options/options.html",
