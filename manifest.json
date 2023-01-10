@@ -1,9 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Phoenix Desktop",
+	"name": "Phoenix DashBoard",
 	"version": "1.0",
-	"description": "An extension for 42 students that are part of the Phoenix program.
-		This will remove the Blackhole box on the intra main page and replace it with that display the monthly logtime",
+	"description": "An extension for Phoenix students on intra.42.fr. It will prevent the BlackHole box from appearing, and replace it with a counter of your monthly logtime on your profile and while looking at other Phoenix students.",
 	"icons": {
 		"88": "icons/icon.webp"
 	},
