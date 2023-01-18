@@ -6,11 +6,6 @@
 	"icons": {
 		"88": "icons/icon.webp"
 	},
-	"options_ui": {
-		"page": "options/options.html",
-		"browser_style": false,
-		"open_in_tab": true
-	},
 	"permissions": [
 		"*://*.intra.42.fr/*"
 	],
