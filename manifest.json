@@ -29,6 +29,7 @@
 		{
 			"matches": [ "*://*.intra.42.fr/*" ],
 			"js": ["srcs/pheonix.js", "srcs/blackhole.js"],
+			"css": ["srcs/fonts/logtime.css"],
 			"run_at": "document_end"
 		}
 	],
