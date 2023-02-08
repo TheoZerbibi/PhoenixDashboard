@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "Phoenix DashBoard",
+	"version": "2.0",
+	"description": "An extension for Phoenix students on intra.42.fr.",
+	"icons": {
+		"88": "icons/icon.webp"
+	},
+	"permissions": [
+		"*://*.intra.42.fr/*"
+	],
+	"incognito": "spanning",
+	"content_scripts": [
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"css": ["srcs/fonts/custom.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"js": ["srcs/utils/utils.js", "srcs/utils/console.js", "srcs/init.js", "srcs/logtime.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [ "*://*.intra.42.fr/*" ],
+			"js": ["srcs/pheonix.js", "srcs/blackhole.js"],
+			"css": ["srcs/fonts/logtime.css"],
+			"run_at": "document_end"
+		}
+	],
+	"background": {
+		"service_worker": "srcs/pheonix.js"
+	}
+}
