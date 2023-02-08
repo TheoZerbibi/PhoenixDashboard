@@ -6,7 +6,7 @@
 /*   By: thzeribi <thzeribi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 17:29:29 by thzeribi          #+#    #+#             */
-/*   Updated: 2023/01/18 11:17:53 by thzeribi         ###   ########.fr       */
+/*   Updated: 2023/02/08 04:59:11 by thzeribi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,14 @@ function getLogin() {
 	catch (err) {
 		return (null);
 	}
+}
+
+function reverseObj(obj) {
+	let		finalObj = {}
+	const	tmp = Object.keys(obj).reverse();
+
+	tmp.forEach(function(i) { 
+		finalObj[i] = obj[i];
+	})
+	return (finalObj);
 }
