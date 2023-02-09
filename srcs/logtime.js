@@ -104,7 +104,7 @@ function timeRemaining(logtime) {
 		logtimeContentDiv.innerHTML = `0 hour`;
 	else
 		logtimeContentDiv.innerHTML += `${(logtime.total_hours > 0) ? ((96 - logtime.total_hours) - 1) : 96} hours`;
-	if (logtime.total_hours < 96)	
+	if (logtime.total_hours < 96 && logtime.minutes > 0)
 		logtimeContentDiv.innerHTML += ` ${60 - logtime.minutes} minutes`;
 	conditionDiv.appendChild(logtimeDiv);
 	logtimeDiv.appendChild(logtimeTitleDiv);
