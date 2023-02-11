@@ -74,7 +74,7 @@ function weekLogtime(logtime) {
 	const	logtimeTitleDiv = document.createElement('h3');
 	const	logtimeContentDiv = document.createElement('h4');
 	logtimeContentDiv.style.textAlign = "center";
-	if (logtime.hours >= 24 || monthTotalHours >= 96) logtimeContentDiv.style.setProperty("color", "#009407", "important");
+	if (logtime.total_hours >= 24 || monthTotalHours >= 96) logtimeContentDiv.style.setProperty("color", "#009407", "important");
 	else logtimeContentDiv.style.setProperty("color", "#bd0000", "important");
 
 	logtimeTitleDiv.innerHTML = `Logtime this week\n`;
