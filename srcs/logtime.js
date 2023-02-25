@@ -57,7 +57,7 @@ function monthLogtime(logtime)
 	monthTotalHours = logtime.total_hours;
 	logtimeContentDiv.style.textAlign = "center";
 	logtimeDiv.style.paddingRight = '20px';
-	if (logtime.hours >= 96) logtimeContentDiv.style.setProperty("color", "#009407", "important");
+	if (logtime.total_hours >= 96) logtimeContentDiv.style.setProperty("color", "#009407", "important");
 	else logtimeContentDiv.style.setProperty("color", "#bd0000", "important");
 
 	logtimeTitleDiv.innerHTML = `Logtime this month\n`;
