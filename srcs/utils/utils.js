@@ -6,14 +6,14 @@
 /*   By: thzeribi <thzeribi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 17:29:29 by thzeribi          #+#    #+#             */
-/*   Updated: 2023/02/08 04:59:11 by thzeribi         ###   ########.fr       */
+/*   Updated: 2023/03/17 05:35:36 by thzeribi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 function isPhoenix() {
 	try {
-		let data = document.querySelector(".user-badge").getAttribute("data-badge");
-		if (data === "phoenix")
+		let data = document.querySelector("[data-badge=phoenix]");
+		if (data)
 			return (true);
 		else return (false);
 	} catch (err) {
