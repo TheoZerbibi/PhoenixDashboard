@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Phoenix DashBoard",
-	"version": "2.0",
+	"version": "2.1",
 	"description": "An extension for Phoenix students on intra.42.fr. It will prevent the BlackHole box from appearing, and replace it with a counter of your monthly logtime on your profile and while looking at other Phoenix students.",
 	"icons": {
 		"88": "icons/icon.webp"
