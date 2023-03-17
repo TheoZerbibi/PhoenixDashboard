@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Phoenix DashBoard",
-	"version": "2.0",
+	"version": "2.2",
 	"description": "An extension for Phoenix students on intra.42.fr.",
 	"icons": {
 		"88": "icons/icon.webp"
